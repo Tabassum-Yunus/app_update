@@ -1,0 +1,40 @@
+{
+  "name": "app_update",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon --exec electron .",
+    "upload": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "Tabassum Yunus",
+        "repo": "app_update"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tabassum-Yunus/app_update.git"
+  },
+  "author": "Tabassum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tabassum-Yunus/app_update/issues"
+  },
+  "homepage": "https://github.com/Tabassum-Yunus/app_update#readme",
+  "description": "",
+  "devDependencies": {
+    "electron": "^37.2.4"
+  },
+  "dependencies": {
+    "electron-builder": "^26.0.12",
+    "electron-log": "^5.4.1",
+    "electron-updater": "^6.6.2",
+    "nodemon": "^3.1.10"
+  }
+}
